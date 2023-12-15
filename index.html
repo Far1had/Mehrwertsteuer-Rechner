@@ -1,20 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Projekte-Level-3_1</title>
 </head>
+
 <body>
-    <header>
-        <h1>Willkommen auf der neuen Seite!</h1>
-    </header>
-    
+
     <main>
-        <p>Hier entsteht eine neue Webseite <3</p>
+        <section>
+            <h1>Mehrwertsteuer-Rechner</h1>
+            <form onsubmit="checkData(); return false">
+                <div class="berechnung">
+                    <h3>Was soll berechnet werden?</h3>
+                    <div>
+                        <div class="divdiv">
+                            <label for="aufschlag">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+                            <input type="radio" name="auswahl" id="aufschlag">
+                        </div>
+                        <div class="divdiv">
+                            <label for="abzug">Mehrwertsteuer abziehen (Brutto zu Netto)</label>
+                            <input type="radio" name="auswahl" id="abzug">
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <h3>Mehrwertsteuersatz</h3>
+                    <label for="neuenZehn">19%</label>
+                    <input type="radio" name="auswahl2" id="neunZehn">
+                    <label for="sieben">7%</label>
+                    <input type="radio" name="auswahl2" id="sieben">
+                </div>
+                <p>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro<span>*</span></p>
+                <label for="ausgabe"></label>
+                <input type="text" id="ausgabe" value="">
+
+                <input type="submit" value="              Berechnen                  ">
+         
+                <h2>Ergebnis</h2>
+                <h3>Mehrwertsteuerbetrag € <span id="result-mw"></span></h3>
+
+                <h3>Bruttobetrag (Endpreis) € <span id="resultEnd"></span></h3>
+
+
+            </form>
     </main>
-    
     <script src="./assets/js/main.js"></script>
 </body>
+
 </html>
