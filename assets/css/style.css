@@ -2,8 +2,30 @@ html{
     font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
     "Droid Sans Mono", monospace, monospace;;
   }
-  
-  
+
+body {
+    background: linear-gradient(rgb(97, 191, 73), rgb(187, 187, 166), rgb(179, 179, 144), red);
+    height: 100vh;
+}  
+
+h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+form, main {
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15%;
+    
+  }
+
+  form {
+    gap: 1vh;
+    width: 100%;
+  }
   .ageCheck, 
   .color-container,
   .reich-sein {
@@ -66,7 +88,7 @@ html{
     display: block;
   }
   input[type="submit"]{
-    background-color: rgb(32, 235, 154);
+    background-color: black;
     border: none;
     color: white;
     padding: 10px;
