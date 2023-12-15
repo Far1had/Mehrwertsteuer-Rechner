@@ -46,6 +46,9 @@ span {
   form {
     gap: 1vh;
     width: 100%;
+    background-color: blueviolet;
+    border: 9px solid white;
+    border-radius: 50px;
   }
   .ageCheck, 
   .color-container,
