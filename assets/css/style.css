@@ -49,7 +49,7 @@ span {
 form {
   gap: 1vh;
   width: 100%;
-  background-color: blueviolet;
+  background-color: rgba(127, 20, 227, 0.489);
   border: 9px solid white;
   border-radius: 50px;
 }
